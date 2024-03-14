@@ -1,0 +1,30 @@
+<template>
+	<main>
+		<div>
+			<AdminComp v-if="useStore.username == 'admin'"/>
+			<ClientComp v-else-if="useStore.username == 'client'"/>
+		</div>
+		
+	</main>
+</template>
+
+<style>
+</style>
+
+
+<script setup>
+import AdminComp from '../components/AdminComp.vue';
+import ClientComp from '../components/ClientComp.vue';
+
+import { piniaStore } from '../stores/store'
+import { useRouter } from 'vue-router'
+
+const useStore = piniaStore();
+const router = useRouter()
+
+// const checkStatus = () => {
+// 	if(useStore.username == null){
+// 		router.push("/login")
+// 	}
+// }
+</script>

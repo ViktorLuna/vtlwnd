@@ -7,5 +7,20 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  // plugins: [],
+  plugins: [
+  //   function({ addVariant }) {
+  //     addVariant('odd', ({ modifySelectors, separator }) => {
+  //       modifySelectors(({ className }) => {
+  //         return `.${className}:nth-child(odd)`;
+  //       });
+  //     });
+
+  //     addVariant('even', ({ modifySelectors, separator }) => {
+  //       modifySelectors(({ className }) => {
+  //         return `.${className}:nth-child(even)`;
+  //       });
+  //     });
+  //   },
+  ],
 }

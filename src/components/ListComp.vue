@@ -1,7 +1,9 @@
 <template>
-    <div class="h-screen flex flex-col justify-around items-center">
-        <!-- <div></div> -->
-        <div class="max-w-screen-sm max-h-96 overflow-auto">
+    <div class="h-screen flex flex-col justify-center items-center">
+
+        <div class="mb-20"></div>
+
+        <div class="flex items-center max-w-screen-lg overflow-auto" style="height: 40rem;">
             <div class="flex flex-wrap gap-4">
                 <!-- even:bg-green-100 odd:bg-red-100 -->
                 <div v-for="list in lists" :key="list" class="w-40 h-20 border border-slate-300 grow flex justify-center items-center ">
@@ -13,7 +15,8 @@
                 </div>
             </div>
         </div>   
-        <p class="text-xs md:flex block text-center text-slate-400 hover:text-slate-900">Created with 
+
+        <p class="my-7 text-xs md:flex block text-center text-slate-400 hover:text-slate-900">Created with 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-1 w-5 h-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
             </svg>
@@ -50,6 +53,10 @@ import { reactive } from 'vue'
         { name:'006 - Filter', image: '', to: '/filter'},
         { name:'007 - Filter', image: '', to: '/filter'},
         { name:'008 - Filter', image: '', to: '/filter'},
-        { name:'009 - Filter', image: '', to: '/filter'}
+        { name:'007 - Filter', image: '', to: '/filter'},
+        { name:'008 - Filter', image: '', to: '/filter'},
+        { name:'008 - Filter', image: '', to: '/filter'},
+        { name:'008 - Filter', image: '', to: '/filter'},
+        { name:'008 - Filter', image: '', to: '/filter'}
     ])
 </script>

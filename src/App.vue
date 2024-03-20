@@ -1,5 +1,5 @@
 <template>
-	<div class="fixed w-screen py-4 px-10 flex justify-between">
+	<div class="fixed w-screen py-4 px-10 flex justify-between z-10">
 
 		<router-link to="/" v-show="router.currentRoute.value.path != '/'" >
 			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mt-1 w-6 h-6 stroke-1 hover:stroke-2">

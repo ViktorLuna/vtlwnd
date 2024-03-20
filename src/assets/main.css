@@ -5,28 +5,3 @@
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
 }
-
-.title{
-  /* font-family: "Bitter", serif; */
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.admin-container{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #80c1ca;
-}
-
-.client-container{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #e886a8;
-}

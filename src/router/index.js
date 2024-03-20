@@ -1,25 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LoginComp from '../components/LoginComp.vue'
-import AdminComp from '../components/AdminComp.vue'
-import ClientComp from '../components/ClientComp.vue'
+import ListComp from '../components/ListComp.vue'
+import FilterVue3 from '../components/Filter-Vuejs3.vue'
+import ComputedVue3 from '../components/Computed-Vuejs3.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/login',
-      name: 'login',
-      component: LoginComp
+      path: '/',
+      name: 'list',
+      component: ListComp
     },
     {
-      path: '/admin',
-      name: 'admin',
-      component: AdminComp
+      path: '/filter',
+      name: 'filter',
+      component: FilterVue3
     },
     {
-      path: '/client',
-      name: 'client',
-      component: ClientComp
+      path: '/computed',
+      name: 'computed',
+      component: ComputedVue3
     },
   ]
 })

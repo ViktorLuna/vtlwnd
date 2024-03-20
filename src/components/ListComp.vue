@@ -34,7 +34,7 @@ import { reactive } from 'vue'
     // get the route list on router/index.js to create a dynamic implementation of route(to) calling
     const lists = reactive([
         { name:'001 - Filter', image: '', to: '/filter'},
-        { name:'002 - Computed', image: '', to: '/filter'},
+        { name:'002 - Computed', image: '', to: '/computed'},
         { name:'003 - Filter', image: '', to: '/filter'},
         { name:'004 - Filter', image: '', to: '/filter'},
         { name:'005 - Filter', image: '', to: '/filter'},

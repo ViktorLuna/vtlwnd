@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ListComp from '../components/ListComp.vue'
-import FilterVue3 from '../components/Filter-Vuejs3.vue'
-import ComputedVue3 from '../components/Computed-Vuejs3.vue'
+import RefReactive from '../components/RefReactive.vue'
+import Filter from '../components/Filter.vue'
+import Pending from '../components/Pending.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,14 +13,19 @@ const router = createRouter({
       component: ListComp
     },
     {
-      path: '/filter',
-      name: 'filter',
-      component: FilterVue3
+      path: '/RefReactive',
+      name: 'RefReactive',
+      component: RefReactive
     },
     {
-      path: '/computed',
-      name: 'computed',
-      component: ComputedVue3
+      path: '/filter',
+      name: 'filter',
+      component: Filter
+    },
+    {
+      path: '/pending',
+      name: 'pending',
+      component: Pending
     },
   ]
 })

@@ -2,7 +2,7 @@
 	<div class="h-screen flex flex-col justify-between items-center">
         <div></div>
 
-		<div class="max-h-[70vh] border p-10 max-w-screen-sm border-slate-300 overflow-auto">
+		<div class="max-h-[70vh] min-h-[50vh] border p-10 max-w-screen-md border-slate-300 overflow-auto">
 			<h1>Filter Data</h1>
 			<br>
 			<select v-model="selectedDepartment" class="p-1 mr-1 mb-1">
@@ -49,13 +49,13 @@
 import { ref, computed } from 'vue'
 
 const Empdata = ref([
-	{ name: 'juswa', department:'ihs', section: 'sdb', team: 'esti'},
-	{ name: 'clancy', department:'ihs', section: 'sda', team: 'sda1'},
-	{ name: 'nico', department:'ihs', section: 'sda', team: 'sda2'},
-	{ name: 'ned', department:'ihs', section: 'sdb', team: 'cad'},
-	{ name: 'trash', department:'fakeDepartment', section: 'icad', team: 'icad'},
-	{ name: 'trash2', department:'fakeDepartment', section: 'icad', team: 'icad'},
-	{ name: 'tyler', department:'fakeDepartment', section: 'logistics', team: 'maintenance'},
+	{ name: 'juswa', department:'IHS', section: 'SD BK', team: 'CAD'},
+	{ name: 'clancy', department:'IHS', section: 'SD AK', team: 'Global'},
+	{ name: 'nico', department:'IHS', section: 'SD AK', team: 'SD AK 2'},
+	{ name: 'ned', department:'IHS', section: 'SD logistics', team: 'USA'},
+	{ name: 'trash', department:'QA', section: 'Quality Management 1', team: 'Quality and Document Control 1'},
+	{ name: 'trash2', department:'QA', section: 'Quality Management 2', team: 'Quality and Document Control 2'},
+	{ name: 'tyler', department:'CAD Planning 1', section: 'Plan Administration', team: 'Plan Control'},
 ]);
 
 const departments = [...new Set(Empdata.value.map(item => item.department))]

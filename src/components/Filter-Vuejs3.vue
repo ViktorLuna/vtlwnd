@@ -2,15 +2,15 @@
 	<div class="h-screen flex flex-col justify-between items-center">
         <div></div>
 
-		<div class="border p-10 max-w-screen-sm border-slate-300">
+		<div class="max-h-[70vh] border p-10 max-w-screen-sm border-slate-300 overflow-auto">
 			<h1>Filter Data</h1>
 			<br>
-			<select v-model="selectedDepartment" class="p-1 mr-1">
+			<select v-model="selectedDepartment" class="p-1 mr-1 mb-1">
 				<option value="">All Department</option>
 				<option v-for="department in departments" :key="department">{{ department }}</option>
 			</select>
 			
-			<select v-model="selectedSection" class="p-1 mr-1">
+			<select v-model="selectedSection" class="p-1 mr-1 mb-1">
 				<option value="">All Sections</option>
 				<option v-for="section in sortedSections" :key="section">{{ section }}</option>
 			</select>

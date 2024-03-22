@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ListComp from '../components/ListComp.vue'
-import RefReactive from '../components/RefReactive.vue'
-import Filter from '../components/Filter.vue'
-import printThis from '../components/printThis.vue'
-import Pending from '../components/Pending.vue'
+import RefReactive from '../components/staccs/RefReactive.vue'
+import Filter from '../components/staccs/Filter.vue'
+import printThis from '../components/staccs/printThis.vue'
+import Pending from '../components/staccs/Pending.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

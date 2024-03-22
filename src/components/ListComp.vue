@@ -3,7 +3,7 @@
 
         <div class="mt-28 h-[60vh] flex items-center max-w-screen-lg overflow-auto">
             <div class="h-[100%] flex flex-wrap gap-4 pt-2">
-                <div v-for="list in lists" :key="list" class="w-40 h-20 border border-slate-300 grow flex justify-center items-center ">
+                <div v-for="list in lists" :key="list" :class="{ 'pointer-events-none opacity-50 bg-gray-200' : list.status == 'onGoing' }" class=" w-40 h-20 border border-slate-300 grow flex justify-center items-center ">
                     <router-link class="h-20 w-screen flex justify-center items-center hover:bg-blue-200 hover:shadow-lg hover:shadow-gray-200" :to="list.to">
                         <div class="p-5">
                             <p class="text-center">{{ list.name }}</p>
@@ -41,33 +41,30 @@ import { reactive } from 'vue'
 
     // get the route list on router/index.js to create a dynamic implementation of route(to) calling
     const lists = reactive([
-        { name:'001 - Ref & Reactive on Api', image: '', to: '/RefReactive'},
-        { name:'002 - Filter, Map & Computed', image: '', to: '/filter'},
-        { name:'003 - Watch & Search', image: '', to: '/pending'},
-        { name:'004 - Suspense', image: '', to: '/pending'},
-        { name:'005 - Sort', image: '', to: '/pending'},
-        { name:'006 - Transition', image: '', to: '/pending'},
-        { name:'007 - FlexBox', image: '', to: '/pending'},
-        { name:'008 - Grid', image: '', to: '/pending'},
-        { name:'009 - Odd & Even', image: '', to: '/pending'}, //even:bg-red-100 odd:bg-blue-100
-        { name:'010 - Dialog', image: '', to: '/pending'},
-        { name:'011 - Transform', image: '', to: '/pending'},
-        { name:'012 - VueUse', image: '', to: '/pending'},
-        { name:'013 - On-Going', image: '', to: '/pending'},
-        { name:'014 - On-Going', image: '', to: '/pending'},
-        { name:'015 - On-Going', image: '', to: '/pending'},
-        { name:'016 - On-Going', image: '', to: '/pending'},
-        { name:'017 - On-Going', image: '', to: '/pending'},
-        { name:'018 - On-Going', image: '', to: '/pending'},
-        { name:'019 - On-Going', image: '', to: '/pending'},
-        { name:'020 - On-Going', image: '', to: '/pending'},
-        { name:'021 - On-Going', image: '', to: '/pending'},
-        { name:'022 - On-Going', image: '', to: '/pending'},
-        { name:'023 - On-Going', image: '', to: '/pending'},
-        { name:'024 - Print This', image: '', to: '/pending'}, //Hi! I'm Josh, I wanna say you're awesome! keep going 'kay?, hai hai!
-        { name:'025 - Dark Mode', image: '', to: '/pending'},
-    ])
+        { name: '001 - Ref & Reactive on Api', status: 'onGoing', to: '/RefReactive'},
+        { name: '002 - Filter, Map & Computed', status: '', to: '/filter'},
+        { name: '003 - Watch & Search', status: 'onGoing', to: '/pending'},
+        { name: '004 - Suspense', status: 'onGoing', to: '/pending'},
+        { name: '005 - Sort', status: 'onGoing', to: '/pending'},
+        { name: '006 - Transition', status: 'onGoing', to: '/pending'},
+        { name: '007 - FlexBox', status: 'onGoing', to: '/pending'},
+        { name: '008 - Grid', status: 'onGoing', to: '/pending'},
+        { name: '009 - Odd & Even', status: 'onGoing', to: '/pending'}, //even:bg-red-100 odd:bg-blue-100
+        { name: '010 - Dialog', status: 'onGoing', to: '/pending'},
+        { name: '011 - Transform', status: 'onGoing', to: '/pending'},
+        { name: '012 - VueUse', status: 'onGoing', to: '/pending'},
+        { name: '013 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '014 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '015 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '016 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '017 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '018 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '019 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '020 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '021 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '022 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '023 - On-Going', status: 'onGoing', to: '/pending'},
+        { name: '024 - Print This', status: '', to: '/printThis'},
+        { name: '025 - Dark Mode', status: 'onGoing', to: '/pending'},
+    ]) 
 </script>
-
-<style>
-</style>

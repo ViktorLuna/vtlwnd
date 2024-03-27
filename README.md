@@ -1,6 +1,8 @@
 # Staccs
-<img src="https://github.com/ViktorLuna/vtlwnd/assets/150304387/050b5085-f4ab-44ff-93d1-fac9e32019fc" width="710"/>
-<img src="https://github.com/ViktorLuna/vtlwnd/assets/150304387/2e161c45-44e9-4a11-b19c-cd168a461d53" width="190"/>
+<div>
+  <img src="https://github.com/ViktorLuna/vtlwnd/assets/150304387/050b5085-f4ab-44ff-93d1-fac9e32019fc" width="710"/>
+  <img src="https://github.com/ViktorLuna/vtlwnd/assets/150304387/2e161c45-44e9-4a11-b19c-cd168a461d53" width="190"/>
+</div>
 
 ### Project Features ✨
 
